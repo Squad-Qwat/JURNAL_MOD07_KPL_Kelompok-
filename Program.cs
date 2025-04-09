@@ -13,5 +13,5 @@ static void Main(string[] args)
     TeamMembers_103022300082.ReadJSON(fileName2);
 
     string fileName3 = "jurnal7_3_103022300082.json";
-    TeamMembers_103022300082.ReadJSON(fileName3);
+    GlossaryItem_103022300082.ReadJSON(fileName3);
 }
