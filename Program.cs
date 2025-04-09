@@ -11,5 +11,10 @@ public class Program
 
         TeamMembers_103022300144 team = new TeamMembers_103022300144();
         await team.ReadJson();
+
+        Console.WriteLine("");
+
+        GlossaryItem_103022300144 gloss = new GlossaryItem_103022300144();
+        await gloss.ReadJson();
     }
 }
