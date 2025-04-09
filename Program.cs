@@ -6,13 +6,17 @@ using CobaJSON3;
 static void Main(string[] args)
 {
     string fileName = "jurnal7_1_103022300082.json";
-    DataMahasiswa_103022300082 data = DataMahasiswa_103022300082.ReadJSON(fileName);
-    data.PrintData();
+    DataMahasiswa_103022300082 idItem = new DataMahasiswa_103022300082();
+    DataMahasiswa iddata = DataMahasiswa_103022300082.ReadJSON(fileName);
+    idItem.PrintData(iddata);
 
     string fileName2 = "jurnal7_2_103022300082.json";
-    TeamMembers_103022300082 data2 = TeamMembers_103022300082.ReadJSON(fileName2);
-    data2.PrintData();
+    TeamMembers_103022300082 teamItem = new TeamMembers_103022300082();
+    Member teamdata = TeamMembers_103022300082.ReadJSON(fileName2);
+    teamItem.PrintData(teamdata);
 
     string fileName3 = "jurnal7_3_103022300082.json";
-    GlossaryItem_103022300082.ReadJSON(fileName3);
+    GlossaryItem_103022300082 glosItem = new GlossaryItem_103022300082();
+    glossary glosdata = GlossaryItem_103022300082.ReadJSON(fileName3);
+    glosItem.PrintData(glosdata);
 }

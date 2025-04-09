@@ -19,7 +19,7 @@ namespace CobaJSON1
         public string name { get; set; }
     }
 
-    public class DataMahasiswa_103022300082
+    public class DataMahasiswa 
     {
         public string name { get; set; }
         public string nim { get; set; }
@@ -27,17 +27,18 @@ namespace CobaJSON1
         public string phone { get; set; }
         public List<AddressList> address { get; set; }
         public List<CourseList> courses { get; set; }
+    }
 
-        public static DataMahasiswa_103022300082 ReadJSON(string fileName) 
+    public class DataMahasiswa_103022300082
+    {
+        public static DataMahasiswa ReadJSON(string fileName) 
         {
             string jsonString = File.ReadAllText(fileName);
-            DataMahasiswa_103022300082 data = JsonSerializer.Deserialize<DataMahasiswa_103022300082>(jsonString);
-            return data;
+            return JsonSerializer.Deserialize<DataMahasiswa>(jsonString);
         }
 
-        public void PrintData()
+        public void PrintData(DataMahasiswa data)
         {
-            DataMahasiswa_103022300082 data = ReadJSON("jurnal7_1_103022300082.json");
             Console.WriteLine("Name: " + data.name);
             Console.WriteLine("NIM: " + data.nim);
             Console.WriteLine("Email: " + data.email);
