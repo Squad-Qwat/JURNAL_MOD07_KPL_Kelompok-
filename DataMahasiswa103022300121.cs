@@ -22,9 +22,6 @@ namespace Jurnal07_Kelompok
             public string name { get; set; }
         }
 
-
-
-
         public class Mahasiswa
         {
             public string firstName { get; set; }

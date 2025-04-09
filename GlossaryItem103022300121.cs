@@ -54,6 +54,7 @@ namespace Jurnal07_Kelompok
             Glossary data = JsonSerializer.Deserialize<Glossary>(json);
             Console.WriteLine("ID: " + data.glossary.GlossDiv.GlossList.GlossEntry.ID);
             Console.WriteLine("Sort as: " + data.glossary.GlossDiv.GlossList.GlossEntry.SortAs);
+            Console.WriteLine("Glossary Term: " + data.glossary.GlossDiv.GlossList.GlossEntry.GlossTerm);
             Console.WriteLine("Acronym: " + data.glossary.GlossDiv.GlossList.GlossEntry.Acronym);
             Console.WriteLine("Abbrev: " + data.glossary.GlossDiv.GlossList.GlossEntry.Abbrev);
             foreach (var seealso in data.glossary.GlossDiv.GlossList.GlossEntry.GlossDef.GlossSeeAlso) 
