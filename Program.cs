@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Jurnal07_Kelompok.services;
+
+public class Program
+{
+    public static async Task Main(string[] args)
+    {
+        DataMahasiswa_103022300144 mahasiswa = new DataMahasiswa_103022300144();
+        await mahasiswa.ReadJson();
+    }
+}
