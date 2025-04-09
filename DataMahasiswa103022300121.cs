@@ -40,9 +40,9 @@ namespace Jurnal07_Kelompok
 
             string json = File.ReadAllText(filePath);
             Mahasiswa data = JsonSerializer.Deserialize<Mahasiswa>(json);
-            Console.WriteLine("Nama " + data.firstName + " " + data.lastName);
-            Console.WriteLine("Gender " + data.gender);
-            Console.WriteLine("Umur " + data.age);
+            Console.WriteLine("Nama: " + data.firstName + " " + data.lastName);
+            Console.WriteLine("Gender: " + data.gender);
+            Console.WriteLine("Umur: " + data.age);
             Console.WriteLine("===Alamat=== " + data.age);
             Console.WriteLine("Jalan: " + data.address.streetAddress);
             Console.WriteLine("Kota/Kab: " + data.address.city);
