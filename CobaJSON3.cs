@@ -5,7 +5,7 @@ using System.Text.Json;
 
 namespace CobaJSON3
 {
-    public class glossdef 
+    public class glossdef
     {
         public string[] glossseealso { get; set; }
         public string para { get; set; }
