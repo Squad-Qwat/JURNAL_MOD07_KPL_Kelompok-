@@ -10,7 +10,8 @@ static void Main(string[] args)
     data.PrintData();
 
     string fileName2 = "jurnal7_2_103022300082.json";
-    TeamMembers_103022300082.ReadJSON(fileName2);
+    TeamMembers_103022300082 data2 = TeamMembers_103022300082.ReadJSON(fileName2);
+    data2.PrintData();
 
     string fileName3 = "jurnal7_3_103022300082.json";
     GlossaryItem_103022300082.ReadJSON(fileName3);
