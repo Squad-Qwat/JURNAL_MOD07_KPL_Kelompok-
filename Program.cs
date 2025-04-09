@@ -6,5 +6,10 @@ public class Program
     {
         DataMahasiswa_103022300144 mahasiswa = new DataMahasiswa_103022300144();
         await mahasiswa.ReadJson();
+
+        Console.WriteLine("");
+
+        TeamMembers_103022300144 team = new TeamMembers_103022300144();
+        await team.ReadJson();
     }
 }

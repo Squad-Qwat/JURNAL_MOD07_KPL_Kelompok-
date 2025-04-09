@@ -1,0 +1,32 @@
+{
+  "members": [
+    {
+      "firstName": "Fa Ainama Caldera",
+      "lastName": "Sudibyo",
+      "gender": "male",
+      "age": 20,
+      "nim": "103022300144"
+    },
+    {
+      "firstName": "Muhammad Abiyyu",
+      "lastName": "Al-Ghifari",
+      "gender": "male",
+      "age": 19,
+      "nim": "103022300121"
+    },
+    {
+      "firstName": "Afriza Gilleon",
+      "lastName": "Ginting",
+      "gender": "male",
+      "age": 20,
+      "nim": "103022300154"
+    },
+    {
+      "firstName": "Timotius Darrel Putra",
+      "lastName": "Arma",
+      "gender": "male",
+      "age": 20,
+      "nim": "103022300082"
+    }
+  ]
+}
